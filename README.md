@@ -1,5 +1,8 @@
-Sample User Details form
-Pre-requisites:
+Sample User Details form 
+
+It is a simple webpage having Registration form to fill details for demo projects.
+
+- Pre-requisites:-
 - PHP, Apache Server, Mysql
 
 Procedure:
