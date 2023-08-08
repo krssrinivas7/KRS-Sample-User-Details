@@ -1,18 +1,12 @@
 <?php
-
-require 'vendor/autoload.php'; // Load Composer's autoloader
-
-$dotenv = Dotenv\Dotenv::createImmutable(/var/www/html/userdetails);
-$dotenv->load();
-
 // Database connection parameters
-$dbHost = getenv('DB_HOST');
-$dbUsername = getenv('DB_USERNAME');
-$dbPassword = getenv('DB_PASSWORD');
-$dbName = getenv('DB_NAME');
+$host = "sql6.freemysqlhosting.net";
+$dbUsername = "sql6638362";
+$dbPassword = "Qz3FH7eRGD";
+$dbName = "sql6638362";
 
-// Use these variables to establish the database connection
-$conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
+// Create a connection to the database
+$conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
 // Check connection
 if ($conn->connect_error) {
