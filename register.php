@@ -1,9 +1,9 @@
 <?php
 // Database connection parameters
-$host = "sql6.freemysqlhosting.net";
-$dbUsername = "sql6638362";
-$dbPassword = "Qz3FH7eRGD";
-$dbName = "sql6638362";
+$host = "servername";
+$dbUsername = "dbusername";
+$dbPassword = "dbpassword";
+$dbName = "dbname";
 
 // Create a connection to the database
 $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
