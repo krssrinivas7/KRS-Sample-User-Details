@@ -18,5 +18,6 @@ By using Docker
   $ docker pull krssrinivas/userdetails:1
 - Create container with the pulled image
   $ docker run -d -p 80:80 --name userdetails krssrinivas/userdetails:1
+- Go inside container and update mysql database credentials if required the data.
 - Access using http://localhost(or)pubip/
     
