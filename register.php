@@ -1,4 +1,10 @@
 <?php
+
+require 'vendor/autoload.php'; // Load Composer's autoloader
+
+$dotenv = Dotenv\Dotenv::createImmutable(/var/www/html/userdetails);
+$dotenv->load();
+
 // Database connection parameters
 $dbHost = getenv('DB_HOST');
 $dbUsername = getenv('DB_USERNAME');
