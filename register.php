@@ -3,7 +3,6 @@
 $host = "Hostname";
 $dbUsername = "dbusername";
 $dbPassword = "dbpasswd";
->>>>>>> 88e203033a4538cc081feafded61b678eb49e3c0
 $dbName = "dbname";
 
 // Create a connection to the database
