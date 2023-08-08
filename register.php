@@ -1,12 +1,12 @@
 <?php
 // Database connection parameters
-$host = "localhost";
-$dbUsername = "your_db_username";
-$dbPassword = "your_db_password";
-$dbName = "your_db_name";
+$dbHost = getenv('DB_HOST');
+$dbUsername = getenv('DB_USERNAME');
+$dbPassword = getenv('DB_PASSWORD');
+$dbName = getenv('DB_NAME');
 
-// Create a connection to the database
-$conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
+// Use these variables to establish the database connection
+$conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
 // Check connection
 if ($conn->connect_error) {
